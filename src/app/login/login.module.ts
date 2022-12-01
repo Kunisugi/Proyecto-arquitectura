@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
+import { DbService } from './services/db.service';
 
 import { LoginPageRoutingModule } from './login-routing.module';
 
@@ -13,8 +15,10 @@ import { LoginPage } from './login.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [LoginPage]
+  declarations: [LoginPage],
+  providers: [DbService]
 })
 export class LoginPageModule {}

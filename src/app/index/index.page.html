@@ -27,7 +27,8 @@
 </ion-card><br><br>
 
 
-<ion-toggle color="danger" [checked]="true" style="margin-left:45%;"></ion-toggle>
+<ion-toggle [(ngModel)]="Alertt" color="danger" style="margin-left:45%;" (ionChange)="toggle()"></ion-toggle>
+
 
 
 
